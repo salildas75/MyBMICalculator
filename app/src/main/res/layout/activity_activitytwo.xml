@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".activitytwo">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:hint="@string/enter_weight_in_kg"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="@string/enter_height_in_m"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:onClick="calcbmi"/>
+
+    <TextView
+        android:id="@+id/newText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/your_bmi"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/newText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/your_result"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
